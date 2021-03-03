@@ -1,0 +1,19 @@
+{
+  "name": "quickstart",
+  "version": "1.0.0",
+  "description": "quickstart to lexcasts",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ner",
+    "podcasts"
+  ],
+  "author": "sandcobainer",
+  "license": "ISC",
+  "dependencies": {
+    "google-auth-library": "^6.1.3",
+    "googleapis": "^66.0.0"
+  }
+}
