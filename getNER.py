@@ -67,7 +67,8 @@ for t in lex:
                                     'timestamp':secsToStamps(chunk['start'])
                                 })
 
-        lex[t].pop('transcript') 
+        lex[t].pop('transcript')
+        lex[t].pop('description')
 
     except Exception as e:
         print(e)
