@@ -1,3 +1,8 @@
+"""
+Get Transcripts from Youtube Transcript API and
+Perform Named Entity Recognition and Noun Chunking with SpaCy
+Link NER entities to transcript timestamp
+"""
 from youtube_transcript_api import YouTubeTranscriptApi
 from collections import Counter
 import json 

@@ -1,3 +1,7 @@
+"""
+Find unique NER entities and store to JSON file
+"""
+
 from youtube_transcript_api import YouTubeTranscriptApi
 from pymongo import MongoClient
 import json 
@@ -22,11 +26,3 @@ with open('ner_unique.json', 'w') as json_file:
   json.dump(lex, json_file)
 json_file.close()
 f1.close()
-
-
-# lex_collection = database.get_collection("lex")
-# # open the weekly_demand json file
-# with open("urls.json") as f:
-#     file_data = json.load(f)
-# # insert the data into the collection
-# lex_collection.insert_many(file_data)

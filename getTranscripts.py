@@ -1,18 +1,10 @@
+"""
+Fetch transcripts from each video and load into lex.json
+"""
+
 from youtube_transcript_api import YouTubeTranscriptApi
 from pymongo import MongoClient
 import json 
-
-mongo_client = MongoClient('mongodb://localhost:27017')
-host_info = mongo_client['HOST']
-print ("host:", host_info)
-
-# lex_collection = database.get_collection("lex")
-# # open the weekly_demand json file
-# with open("urls.json") as f:
-#     file_data = json.load(f)
-# # insert the data into the collection
-# lex_collection.insert_many(file_data)
-
 
 # Opening JSON file 
 f1 = open('urls.json')
